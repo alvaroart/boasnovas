@@ -256,6 +256,7 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/", 301)
 }
 
+//TESTE
 func main() {
 
 	var tmpl = template.Must(template.ParseGlob("tmpl/*"))
