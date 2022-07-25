@@ -1,4 +1,4 @@
-CREATE TABLE 'membros' (
+CREATE TABLE 'members' (
   'id' int(6) unsigned NOT NULL AUTO_INCREMENT,
   'name' varchar(30) NOT NULL,
   'email' varchar(30) NOT NULL,

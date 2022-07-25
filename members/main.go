@@ -9,7 +9,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-type Membros struct {
+type Members struct {
 	Id    int
 	Name  string
 	Email string
@@ -34,7 +34,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	//Abrir conexão com o banco
 	db := dbConn()
 	//Realiza consulta com o banco e trata erros
-	selDB, err := db.Query("SELECT * FROM names ORDER BY id DESC")
+	selectDB, err := db.Query("SELECT * FROM names ORDER BY id DESC")
 	if err != nil {
 		panic(err.Error())
 	}
